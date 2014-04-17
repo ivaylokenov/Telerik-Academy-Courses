@@ -4,6 +4,9 @@ body {
 .navbar-right .navbar-form input {
   margin-right: 10px;
 }
+.navbar-right .navbar-form a.btn {
+  margin-left: 10px;
+}
 .toast-top-right {
   top: 70px;
 }

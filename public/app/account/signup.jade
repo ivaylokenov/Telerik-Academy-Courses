@@ -1,0 +1,24 @@
+.container
+    .well
+        form.form-horizontal(name="signUpForm")
+            fieldset
+                legend Create New User
+                .form-group
+                    label.col-md-2.control-label(for="first-name") First Name
+                    .col-md-10
+                        input.form-control(type="text", placeholder="First Name", ng-model="user.firstName", required)
+                .form-group
+                    label.col-md-2.control-label(for="last-name") Last Name
+                    .col-md-10
+                        input.form-control(type="text", placeholder="Last Name", ng-model="user.lastName", required)
+                .form-group
+                    label.col-md-2.control-label(for="username") Username
+                    .col-md-10
+                        input.form-control(type="text", placeholder="Username", ng-model="user.username", required)
+                .form-group
+                    label.col-md-2.control-label(for="password") Password
+                    .col-md-10
+                        input.form-control(type="password", placeholder="Password", ng-model="user.password", required)
+                .pull-right
+                    button.btn.btn-primary(ng-click="signup(user)", ng-disabled="signUpForm.$invalid") Create
+                    a.btn.btn-primary(href="#/") Cancel

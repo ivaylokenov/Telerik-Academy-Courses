@@ -1,0 +1,20 @@
+.container
+    .row
+        .col-md-2 Search
+        .col-md-4
+            input.form-control(type="text", placeholder="Search", ng-model="search")
+        .col-md-2 Sort
+        .col-md-4
+            select.form-control(ng-model="sort")
+                option(value=" " ng-selected="'true'") Default
+                option(value="title") Title
+                option(value="published") Publicsed
+    br
+    table.table
+        tr
+            th Title
+            th Published
+        tr(ng-repeat="course in courses | filter: search | orderBy: sort")
+            td
+                a(href="#/courses/{{ course._id }}") {{ course.title }}
+            td {{ course.published | date }}
