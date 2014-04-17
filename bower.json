@@ -1,0 +1,26 @@
+{
+  "name": "TelerikAcademyCourses",
+  "version": "0.0.1",
+  "description": "MEAN Stack application",
+  "main": "server.js",
+  "authors": [
+    "Ivaylo Kenov"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "toastr": "~2.0.1",
+    "angular": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "bootstrap": "~3.1.1"
+  }
+}
