@@ -1,0 +1,1 @@
+<div ng-repeat="course in courses | orderBy: '-published' | limitTo: 10"><div class="row"><div class="col-md-3">{{ course.published | date: 'MMM d yyyy' }}</div><div class="col-md-9">{{ course.name }}</div></div></div>

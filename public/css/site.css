@@ -1,5 +1,8 @@
 body {
-  padding-top: 60px;
+  padding-top: 80px;
+}
+.navbar-right .navbar-form input {
+  margin-right: 10px;
 }
 footer {
   padding-left: 120px;
