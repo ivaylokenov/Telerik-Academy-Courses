@@ -59,15 +59,15 @@ Message.remove({}).exec(function(err) {
         .then(function(model) {
             messageFromDatabase = model.message;
         });
-})
+});
 
 app.get('/partials/:partialName', function(req, res) {
     res.render('partials/' + req.params.partialName)
-})
+});
 
 app.get('*', function(req, res) {
     res.render('index', {message: messageFromDatabase});
-})
+});
 
 app.listen(port);
 console.log("Server running on port: " + port);

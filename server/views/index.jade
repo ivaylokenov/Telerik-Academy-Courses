@@ -1,5 +1,16 @@
 extends includes/layout
 block main-content
-    h2 Hi from index!
-    div(ng-view)
-    h3= message
+    header.nav.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href="#/") TA Courses
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href="/") Home
+    section
+        div(ng-view)
+
+    footer
+        p.text-center
+            | &copy; Telerik Academy 2014
